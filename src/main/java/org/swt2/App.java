@@ -1,4 +1,4 @@
-package org.swt2-do3-g1;
+package org.swt2;
 
 /**
  * Hello world!
@@ -6,6 +6,7 @@ package org.swt2-do3-g1;
  */
 public class App {
     public static void main(String[] args) {
-        System.out.println( "Hello World!" );
+        SimpleLinkedList<Integer> list = new SimpleLinkedList<Integer>();
+        System.out.println(list);
     }
 }
