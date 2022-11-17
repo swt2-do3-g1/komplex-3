@@ -15,6 +15,18 @@
           <target>19</target>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.7.2.1</version>
+        <dependencies>
+          <dependency>
+            <groupId>com.github.spotbugs</groupId>
+            <artifactId>spotbugs</artifactId>
+            <version>4.7.3</version>
+          </dependency>
+        </dependencies>
+      </plugin>
     </plugins>
   </build>
   <packaging>jar</packaging>
@@ -28,9 +40,9 @@
 
   <dependencies>
     <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <version>5.0.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
