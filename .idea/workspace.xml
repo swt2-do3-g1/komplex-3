@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44b0cd4-1be9-4bbc-9e87-e4164d7c4bce" name="Changes" comment="added junit5&#10;added spotbugs">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="c44b0cd4-1be9-4bbc-9e87-e4164d7c4bce" name="Changes" comment="changes to junit">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/swt2/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/swt2/AppTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +141,7 @@
       <workItem from="1668632351440" duration="504000" />
       <workItem from="1668643596090" duration="377000" />
       <workItem from="1668680234845" duration="3351000" />
-      <workItem from="1668683998046" duration="663000" />
+      <workItem from="1668683998046" duration="1274000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1668643966731</created>
@@ -160,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668681523212</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changes to junit">
+      <created>1668684758876</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668684758876</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +184,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="setup" />
     <MESSAGE value="added junit5&#10;added spotbugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="added junit5&#10;added spotbugs" />
+    <MESSAGE value="changes to junit" />
+    <option name="LAST_COMMIT_MESSAGE" value="changes to junit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
