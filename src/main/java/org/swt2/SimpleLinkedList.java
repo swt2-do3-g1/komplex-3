@@ -4,13 +4,12 @@
 package org.swt2;
 
 import java.util.AbstractCollection;
-import java.util.Collection;
 import java.util.Iterator;
 
 /**
  * Achtung! Einige der Methoden sind fehlerhaft und müssen repariert werden.
  */
-public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collection<E> {
+public class SimpleLinkedList<E> extends AbstractCollection<E> {
     private class Elem {
         private E elem;
         private Elem next;
@@ -30,12 +29,42 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
         Elem e = new Elem(o, null);
         if (start == null) {
             start = e;
+            end = e;
         }
         if (end != null); {
             end.next = e;
         }
         end = e;
         size++;
+        return true;
+    }
+
+    private boolean lremove(Elem toremove){
+
+        if(toremove == start){
+            start = start.next;
+            size--;
+            return true;
+        }
+
+        Elem tmp = start;
+
+        while (toremove != tmp.next && tmp.next != null){
+            tmp = tmp.next;
+        }
+
+        if(tmp.next == null){
+            return false;
+        }
+
+        if(tmp.next.next == null){
+            tmp.next = null;
+            end = tmp;
+        }else{
+            tmp.next = tmp.next.next;
+        }
+
+        size--;
         return true;
     }
 
@@ -46,6 +75,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
     private class Iter implements Iterator<E> {
         private Elem current;
+        private Elem last;
 
         public Iter() {
             current = start;
@@ -53,18 +83,28 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
         @Override
         public boolean hasNext() {
-            return current != null;
+            if(current == null){
+                return false;
+            }
+            return current.next != null;
         }
 
         @Override
         public E next() {
+            if(current == null){
+                throw new java.util.NoSuchElementException();
+            }
+            last = current;
             current = current.next;
-            return current.elem;
+            return last.elem;
         }
 
         @Override
         public void remove() {
-            throw new UnsupportedOperationException();
+            if(last == null){
+                throw new IllegalStateException();
+            }
+            SimpleLinkedList.this.lremove(last);
         }
     }
 
