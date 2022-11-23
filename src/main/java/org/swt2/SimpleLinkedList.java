@@ -32,7 +32,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
             start = e;
             end = e;
         }
-        if (end != null); {
+        if (end != null) {
             end.next = e;
         }
         end = e;
