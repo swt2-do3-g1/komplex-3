@@ -13,6 +13,7 @@ class SimpleLinkedListTest {
     SimpleLinkedList<Integer> emptyList;
     SimpleLinkedList<Integer> filledList;
     SimpleLinkedList<Integer> list;
+    SimpleLinkedList<String> stringList;
 
     @BeforeEach
     void setup() {
@@ -22,13 +23,16 @@ class SimpleLinkedListTest {
             filledList.add(i);
         }
         list = new SimpleLinkedList<>();
+        stringList = new SimpleLinkedList<>();
+        stringList.add("Hello");
+        stringList.add("World");
     }
 
     @Test
-    void testEmptyList() {
+    void testComparison() {
+        assertEquals(list, list);
         assertSame(emptyList.toString(), list.toString());
-        list.add(1);
-        assertNotSame(emptyList.toString(), list.toString());
+        assertNotSame(emptyList.toString(), filledList.toString());
     }
 
     @Test
@@ -38,6 +42,15 @@ class SimpleLinkedListTest {
                 () -> list.add(null)
         );
         assertTrue(exception.getMessage().contains("cannot be null"));
+    }
+
+    @Test
+    void testEmptyInput() {
+        Exception exception = assertThrows(
+                IllegalArgumentException.class,
+                () -> stringList.add("")
+        );
+        assertTrue(exception.getMessage().contains("cannot be empty"));
     }
 
     @Test
@@ -53,11 +66,12 @@ class SimpleLinkedListTest {
     void testSize() {
         assertEquals(list.size(), 0);
 
-        for(int i = 0; i < 10; i++) {
+        for(int i = 0; i < 5; i++) {
             list.add(1);
         }
 
-        assertEquals(list.size(), 10);
+        assertEquals(list.size(), 5);
+        assertEquals(filledList.size(), 10);
     }
 
     @Test

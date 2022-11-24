@@ -29,6 +29,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
     @Override
     public boolean add(E o) {
         if(o == null) throw new NullPointerException("Input cannot be null!");
+        if(o.toString().isEmpty()) throw new IllegalArgumentException("Input cannot be empty!");
 
         Elem e = new Elem(o, null);
         if (start == null) {
