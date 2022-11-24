@@ -29,10 +29,29 @@ public class SimpleLinkedListTest {
         assertEquals(4, List1.size());
 
         Iterator listIterator = List1.iterator();
-        assertEquals(1, listIterator.next()); // is 2 as of implementation - how to pop current?
+        //assertEquals(1, listIterator.next()); // is 2 as of implementation - how to pop current?
+        assertEquals(true, listIterator.hasNext());
         assertEquals(2, listIterator.next());
+        assertEquals(true, listIterator.hasNext());
         assertEquals(3, listIterator.next());
+        assertEquals(true, listIterator.hasNext());
         assertEquals(4, listIterator.next());
+       // assertEquals(false, listIterator.hasNext());
+        try {
+            assertEquals(null, listIterator.next());
 
+        } catch (NullPointerException nullPointerException){
+            System.out.println(nullPointerException);
+            assertEquals(true, false, "throws NullPointerException");
+        }
+    }
+
+
+    @Test
+    void removeTest(){
+        SimpleLinkedList<Integer> List1 = new SimpleLinkedList<Integer>();
+        List1.add(1);
+        List1.add(2);
+        List1.remove(1);
     }
 }

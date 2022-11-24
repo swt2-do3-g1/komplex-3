@@ -55,10 +55,10 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
         @Override
         public boolean hasNext() {
             return current != null;
-        }
+        } // has fault
 
         @Override
-        public E next() {
+        public E next() {                                   // does Nullpointerexception on end of list
             current = current.next;
             return current.elem;
         }
@@ -66,7 +66,7 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
         @Override
         public void remove() {
             throw new UnsupportedOperationException();
-        }
+        } // can be implemented, this implementation fails, because remove(Object) requires a parameter (an Object) in abstractCollection
     }
 
     @Override
