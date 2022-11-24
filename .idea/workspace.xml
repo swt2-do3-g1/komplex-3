@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44b0cd4-1be9-4bbc-9e87-e4164d7c4bce" name="Changes" comment="changes to junit">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="c44b0cd4-1be9-4bbc-9e87-e4164d7c4bce" name="Changes" comment="tests and iterator fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/swt2/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/swt2/SimpleLinkedListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +18,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="nick" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -36,7 +44,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -44,7 +53,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.test (1)">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.swt2.App" />
       <module name="komplex-3" />
@@ -54,21 +63,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="komplex-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.swt2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.swt2" />
-      <option name="MAIN_CLASS_NAME" value="org.swt2.AppTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -84,22 +78,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="AppTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AppTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="komplex-3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.swt2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.swt2" />
-      <option name="MAIN_CLASS_NAME" value="org.swt2.AppTest" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,13 +98,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SimpleLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="komplex-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swt2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.swt2" />
+      <option name="MAIN_CLASS_NAME" value="org.swt2.SimpleLinkedListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SimpleLinkedListTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="komplex-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.swt2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.swt2" />
+      <option name="MAIN_CLASS_NAME" value="org.swt2.SimpleLinkedListTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.test (1)" />
-        <item itemvalue="JUnit.AppTest (1)" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.SimpleLinkedListTest.test" />
+        <item itemvalue="JUnit.SimpleLinkedListTest" />
         <item itemvalue="JUnit.AppTest.test" />
         <item itemvalue="JUnit.AppTest" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +150,13 @@
       <workItem from="1668632351440" duration="504000" />
       <workItem from="1668643596090" duration="377000" />
       <workItem from="1668680234845" duration="3351000" />
-      <workItem from="1668683998046" duration="1274000" />
+      <workItem from="1668683998046" duration="1312000" />
+      <workItem from="1669033927624" duration="2718000" />
+      <workItem from="1669061385495" duration="2768000" />
+      <workItem from="1669069275469" duration="1237000" />
+      <workItem from="1669114767701" duration="2435000" />
+      <workItem from="1669216511325" duration="1151000" />
+      <workItem from="1669284693573" duration="2721000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1668643966731</created>
@@ -164,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668684758876</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added jacoco">
+      <created>1668685298302</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668685298302</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,17 +207,16 @@
     <MESSAGE value="setup" />
     <MESSAGE value="added junit5&#10;added spotbugs" />
     <MESSAGE value="changes to junit" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes to junit" />
+    <MESSAGE value="added jacoco" />
+    <option name="LAST_COMMIT_MESSAGE" value="added jacoco" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/swt2/App.java</url>
-          <line>6</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/komplex_3$SimpleLinkedListTest.ic" NAME="SimpleLinkedListTest Coverage Results" MODIFIED="1669287192689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.swt2.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -6,6 +6,7 @@ package org.swt2;
 import java.util.AbstractCollection;
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 /**
  * Achtung! Einige der Methoden sind fehlerhaft und müssen repariert werden.
@@ -27,6 +28,8 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
     @Override
     public boolean add(E o) {
+        if(o == null) throw new NullPointerException("Input cannot be null!");
+
         Elem e = new Elem(o, null);
         if (start == null) {
             start = e;
@@ -58,8 +61,11 @@ public class SimpleLinkedList<E> extends AbstractCollection<E> implements Collec
 
         @Override
         public E next() {
+            if(current == null)
+                throw new NoSuchElementException("current element is null");
+            E elem = current.elem;
             current = current.next;
-            return current.elem;
+            return elem;
         }
 
         @Override
