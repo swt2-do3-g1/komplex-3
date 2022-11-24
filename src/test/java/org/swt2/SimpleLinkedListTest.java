@@ -1,6 +1,9 @@
 package org.swt2;
 
 import java.util.Iterator;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
 
@@ -20,11 +23,11 @@ public class SimpleLinkedListTest {
             list.add("hello");
             list.add("world");
             Iterator<String> iter = list.iterator();
-            assertEquals(true, iter.hasNext());
+            assertTrue(iter.hasNext());
             assertEquals("hello", iter.next());
-            assertEquals(false, iter.hasNext());
+            assertFalse(iter.hasNext());
             assertEquals("world", iter.next());
-            assertEquals(false, iter.hasNext());
+            assertFalse(iter.hasNext());
         }
     
         @Test
@@ -56,6 +59,23 @@ public class SimpleLinkedListTest {
             assertEquals(0, list.size());
 
 
+        }
+
+        @Test
+        public void testSize(){
+            SimpleLinkedList<String> list = new SimpleLinkedList<String>();
+            assertEquals(0, list.size());
+            list.add("Hello");
+            assertEquals(1, list.size());
+            list.add("World");
+            assertEquals(2, list.size());
+            Iterator<String> tmp = list.iterator();
+            tmp.next();
+            tmp.remove();
+            assertEquals(1, list.size());
+            tmp.next();
+            tmp.remove();
+            assertEquals(0, list.size());
         }
 
     
