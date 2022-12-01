@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44b0cd4-1be9-4bbc-9e87-e4164d7c4bce" name="Changes" comment="+ App test&#10;+ README gefüllt">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/screenshot.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/swt2/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/spotbugs.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/xlint.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/swt2/SimpleLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/swt2/SimpleLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/swt2/SimpleLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/screenshot.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/debugger.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="nick" />
+        <entry key="$PROJECT_DIR$" value="vanilla4" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,12 +58,15 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Nick\IdeaProjects\komplex-3\src\main\resources" />
+      <recent name="C:\Users\Nick\IdeaProjects\komplex-3\src\main\java\org\swt2" />
+      <recent name="C:\Users\Nick\IdeaProjects\komplex-3\src\test\java\org\swt2" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.swt2" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testMain">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.swt2.App" />
       <module name="komplex-3" />
@@ -143,10 +145,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.AppTest.testMain" />
         <item itemvalue="Application.App" />
         <item itemvalue="JUnit.SimpleLinkedListTest.test" />
         <item itemvalue="JUnit.SimpleLinkedListTest" />
+        <item itemvalue="JUnit.AppTest.testMain" />
         <item itemvalue="JUnit.AppTest.test" />
       </list>
     </recent_temporary>
@@ -169,6 +171,8 @@
       <workItem from="1669114767701" duration="2435000" />
       <workItem from="1669216511325" duration="1151000" />
       <workItem from="1669284693573" duration="2721000" />
+      <workItem from="1669805354779" duration="8000" />
+      <workItem from="1669891758495" duration="3405000" />
     </task>
     <task id="LOCAL-00001" summary="setup">
       <created>1668643966731</created>
